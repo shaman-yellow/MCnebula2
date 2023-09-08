@@ -211,7 +211,7 @@ setMethod("read_data",
 collate_used <- function(x) {
   x <- filter_structure(x)
   x <- create_reference(x)
-  sub1 <- c(".f2_formula",  ".canopus", ".f2_info", ".f2_msms")
+  sub1 <- c(".f2_formula",  ".canopus", ".canopus_neg", ".f2_info", ".f2_msms")
   sub2 <- c(".f3_canopus", ".f3_spectra")
   for (i in sub1) {
     x <- collate_data(x, i)
